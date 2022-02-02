@@ -1,3 +1,3 @@
-"# EVENT-BUDDY" 
+"EventBuddy"
 
 by Reuben, Aakarsh, Aarush and Aaron 
