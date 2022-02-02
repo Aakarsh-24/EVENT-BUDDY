@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: black;
+}
+
+header {
+  height: 12vh;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+.EBtitle img {
+  height: 5vw;
+}
+
+.searchbar {
+  align-items: center;
+}
+
+.searchbar input {
+  width: 23vw;
+  height: 32px;
+  margin: 0 16px 0 0px;
+  border-radius: 9px;
+  padding: 0 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(223, 183, 34);
+  font-weight: bold;
+}
+
+.usericon img {
+  height: 8vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+}
+
+.usermenu .menu{
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  padding: 10px 20px;
+  background: #000;
+  width: 235px;
+  height: 410px;
+  box-sizing: 0 5px 25px #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.usermenu .menu.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.usermenu .menu::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.usermenu .menu h1{
+  width: 100%;
+  text-align: center;
+  font: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2em;
+}
+
+.usermenu .menu h1 span2{
+  font-size: 16px;
+  color: #fbf5b7;
+  font-weight: 400;
+}
+
+.usermenu .menu ul1 li {
+  list-style: none;
+  padding: 15px 0;
+  border-top: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.usermenu .menu ul1 li img{
+  max-width: 25px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.usermenu .menu ul1 li:hover img{
+  opacity: 1;
+
+}
+.usermenu .menu ul1 li a{
+  text-decoration: none;
+  color: #fff;
+}
+.usermenu .menu ul1 li:hover a{
+  color: #bf953f;
+}
+span1{
+  color: white;
+}
+
+.container {
+  min-height: calc(130vh - 12vh - 10vh);
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  color: white;
+  background-color: var(--main-bg-color);
+  border: 2px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px 15px;
+  margin-right: 68vh;
+}
+
+.mainbox {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpapergb.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.formbox {
+  width: 380px;
+  height: 500px;
+  position: relative;
+  margin: 6% auto;
+  background: #000;
+  padding: 5px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.buttonbox {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #b38728;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  border-radius: 30px;
+  color: #fff;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #fbf5b7, #bf953f, #aa771c);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.socialicons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.socialicons img {
+  width: 40px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #b38728;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.inputgroup {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.inputfield {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.Submitbutton {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #fbf5b7, #bf953f, #aa771c);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+span {
+  color: #fff;
+  font-size: 13px;
+  bottom: 66px;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: #b38728;
+}
+
+#login {
+
+  left: 50px;
+}
+
+#signup {
+  left: 450px;
+}
+
+::placeholder {
+  color: white;
+  transition: opacity .2s ease-in-out;
+}
+
+:focus::placeholder{
+  opacity: 0.4;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}

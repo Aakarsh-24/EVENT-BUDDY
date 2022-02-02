@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In/Sign-up to your account</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="EBtitle">
+                        <a href="index.html">
+                            <img src="Untitled_design-removebg-preview.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="searchbar">
+                        <input type="text" name="" id="" placeholder="Search for Events">
+                        <button class="button1">Search</button>
+                    </div>
+                </li>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Login.html">LOG IN/SIGN UP</a></li>
+            </ul>
+            <div class="usermenu">
+                <div class="usericon" onclick="UserMenuToggle();">
+                    <img src="whitebackgroundimagebgremoved.png" alt="">
+                </div>
+                <div class="menu">
+                    <h1>Your Name<br><span2>Event Manager</span2></h1>
+                    <ul1>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">My Profile</a></li>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">Edit Profile</a></li>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">Inbox</a></li>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">Settings</a></li>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">Help</a></li>
+                        <li><img src="GoldenUsericon1-removebg-preview.png"><a href="#">Logout</a></li>
+                    </ul1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mainbox">
+        <div class="formbox">
+            <div class="buttonbox">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log-In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign-Up</button>
+            </div>
+            <form id="login" class="inputgroup">
+                <input type="text" class="inputfield" placeholder="Enter Username" required>
+                <input type="text" class="inputfield" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box" required><span>I hereby agree to all <a href="Terms.html">Terms
+                        & Conditions</a></span>
+                <button type="submit" class="Submitbutton">Submit</button>
+            </form>
+            <form id="signup" class="inputgroup">
+                <input type="text" class="inputfield" placeholder="Enter Username" required>
+                <input type="email" class="inputfield" placeholder="Enter Email ID" required>
+                <input type="text" class="inputfield" placeholder="Enter Password" required>
+                <input type="text" class="inputfield" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box" required><span>I hereby agree to all <a href="Terms.html">Terms
+                        & Conditions</a></span>
+                <button type="submit" class="Submitbutton">Submit</button>
+            </form>
+            <div class="socialicons">
+                <a href="https://www.facebook.com/signup"><img src="fb.jpg" alt=""></a>
+                <a href="https://accounts.google.com/signup"><img src="g+.jpg" alt=""></a>
+                <a href="https://twitter.com/i/flow/login"><img src="twt.jpg" alt=""></a>
+            </div>
+        </div>
+        <footer class="text-center">
+            <p> Copyright &copy; EventBuddy.com</p>
+        </footer>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+        function signup() {
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login() {
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+        function UserMenuToggle(){
+            const ToggleUserMenu = document.querySelector('.menu');
+            ToggleUserMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
